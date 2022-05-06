@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     width: '600px',
-    border: '2px solid black',
+    // border: '2px solid black',
 
     [theme.breakpoints.down('xs')]: {
       width: '90%',
@@ -37,8 +37,8 @@ const App = () => {
 
   return (
     <div className={classes.wrapper}>
-      <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography variant="h2" align="center">Video Chat</Typography>
+      <AppBar className={classes.appBar} position="static" color="transparent">
+        <Typography variant="h2" align="center">MKS Skylink</Typography>
       </AppBar>
       <VideoPlayer />
       <Sidebar>

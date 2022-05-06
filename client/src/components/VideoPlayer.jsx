@@ -30,15 +30,15 @@ const VideoPlayer = () => {
   return (
     <Grid container className={classes.gridContainer}>
       {stream && (
-        <Paper className={classes.paper}>
+        <Paper className={classes.paper} style={{ backgroundColor: 'transparent', color: 'whitesmoke', boxShadow: '0 0 15px 1px gray' }}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" gutterBottom>{name || 'Name'}</Typography>
             <video playsInline muted ref={myVideo} autoPlay className={classes.video} />
+            <Typography variant="h5" gutterBottom>{name || 'Name'}</Typography>
           </Grid>
         </Paper>
       )}
       {callAccepted && !callEnded && (
-        <Paper className={classes.paper}>
+        <Paper className={classes.paper} style={{ backgroundColor: 'transparent', color: 'whitesmoke', boxShadow: '0 0 15px 1px gray' }}>
           <Grid item xs={12} md={6}>
             <Typography variant="h5" gutterBottom>{call.name || 'Name'}</Typography>
             <video playsInline ref={userVideo} autoPlay className={classes.video} />
